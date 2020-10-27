@@ -1,0 +1,163 @@
+<html>
+
+<head>
+
+	<style>
+
+		@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+		html{
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+
+@-webkit-keyframes blink {
+
+  0% { opacity: 0 }
+  50% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@-webkit-keyframes fadeParagraph {
+
+    
+  0%, 50% { opacity: 1 }
+  100% { opacity: 0; }
+
+}
+
+@-webkit-keyframes fadeLogo {
+
+    
+  0%, 50% { opacity: 0 }
+  100% { opacity: 1; }
+
+}
+  
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal,
+             blink 8s linear forwards;
+  			 animation-delay: 18s;
+            
+}
+
+
+/* Animation */
+
+
+#thing {
+  animation:
+  fadeParagraph 18s linear forwards;
+}
+
+#logo { 
+
+	animation:
+  fadeLogo 15s linear backwards;
+  animation-delay: 18.5s;
+  font-size: 48pt;
+
+ }
+
+ #clickhere {
+
+ 	color:red;
+ 	font-size: 14pt;
+
+ }
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<p class="line-1 anim-typewriter">
+
+
+		You are cordially invited to solve a mystery. 
+
+
+	</p>
+
+
+
+	<div id="thing">
+
+
+		
+
+
+<br> <br> <br>
+
+The President of the United States of Russia, Donnie Grump, is on the verge of losing the election.
+
+<br> <br> <br>
+
+Some people say he's a racist. A sexist. A deplorable. But that's not why he's on a one-way ticket to loserviller. 
+
+<br><br> <br>
+
+A hacker from America has leaked naked pictures of President Grump, and it's not pretty. In fact, it's almost impossible to see.
+
+<br><br> <br> 
+
+Overnight, President Grump became a national laughingstock. His once avid followers have abandoned him.
+
+</div>
+<center>
+<div id="logo">
+
+The Mysterious Case of the President With a Micro-Penis.
+<br> <br>
+<a href="/tiffanyblinton">
+<span id="clickhere">Click here</span>
+
+</div>
+	</a>
+</center>
+<!-- <script>
+
+var s = document.getElementById('thing').style;
+s.opacity = 1;
+(function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,400)})();
+
+</script> -->
+
+</body>
+
+</html>
