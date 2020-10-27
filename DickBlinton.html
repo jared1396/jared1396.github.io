@@ -1,132 +1,68 @@
 <html>
 <head>
-    <title>Login page</title>
 
-    <style>
-
+	<style>
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 
-label {
+		#descriptionContainer {
 
-    font-size: 25pt;
-    font-family: 'Anonymous Pro', monospace; 
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    margin-top: 17.5%;
-    margin-bottom: 5%;
+			
+			width: 50%;
+			font-family: 'Anonymous Pro', monospace; 
+			float:left;
 
+		}
 
-} 
+		#photoContainer {
+			font-size: 20px;
+			width: 50%;
+			float:right;
+			height: 200px;
+			font-family: 'Anonymous Pro', monospace; 
+			margin-top: 17.5%;
+			margin-right: 10%;
 
-input[type=text] {
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
+		}
 
-input[type=text]:focus {
-    border-color:#333;
-}
-
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-}
-
-#button {
-
-    color: #ffffff;
-    background:red; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 25px; 
-    width: 30%;
-    height: 50px;
-    font-size: 18pt;
-    opacity: 85%;
-    animation: blink normal 2s infinite ease-in-out;
-    -webkit-animation: blink normal 2.5s infinite ease-in-out;
-}
-
-.input {
-
-     padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    border-color:#333;
-
-}
-
-
-    @-webkit-keyframes blink {
-
-    0% {
-        opacity:1;
-    }
-
-    50% {
-        opacity:0.5;
-    }
-
-    100% {
-        opacity:1;
-    }
-}
-
-    </style>
+		#woman {
+			width: 20%;
+  		 	margin-left: auto;
+    		margin-right: auto;
+    		display: block;
+    		position: fixed;
+        	margin-left: 15%;
+        	margin-top: 17%;
 
 
 
+		}
+
+		#characterText {
+			font-size: 20px;
+
+		}
+	</style>
 
 </head>
+
+
 <body>
-    <center>
 
-        <img src="bloody.png" style="width: 150px;height: 20%; margin-bottom: -15%; margin-top: 10%">
-<form>
-    <label for="pswd">
+<div id="descriptionContainer"> <img id="woman" src="unknownimagewoman.png"> </div>
+<div id="photoContainer"> Dick Blinton
+<br><br>
 
-    I stalk babysitters
-    <br> Hunt them with a knife
-    <br>I come out one day a year 
-    <br>You're in for a fright (first name)
+You were the previous ruler of Russia, who responsibly stepped down from your post as all other Presidents have before you. That said, you actually like President Grump and you have a long history of working together with him on business and private deals. 
+
+<br><br>You suspect your wife, Tiffany is cheating on you but you can’t figure out with who. You haven’t slept together in 3 years, and since relinquishing the presidency you've become a little forgotten.
+
+<br> <br> Recently, you’ve founded a social media company - OnlyCelebs - that lets celebrities and politicians share images and talk to each other, privately. 
+
+Your Secret: You know the hacker got the naked pictures of President Grump from your company. 
+
+ </div>
 
 
-    </label>
-    <input class="input" type="password" id="pswd">
-    <br>
-    <br>
-    <input id="button" type="button" value="GOOD LUCK" onclick="checkPswd();" />
-</form>
-<!--Function to check password the already set password is admin-->
-<script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "Michael";
-        var altPassword = "michael";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="MurderMysteryDos.html";
-        }
-
-        else if (altPassword == password) {
-             window.location="MurderMysteryDos.html";
-        }
-
-        else{
-            alert("INCORRECT");
-        }
-    }
-</script>
-
-</center>
 </body>
 </html>
