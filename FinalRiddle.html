@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Login page</title>
+
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+label {
+
+    font-size: 25pt;
+    font-family: 'Anonymous Pro', monospace; 
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top: 17.5%;
+    margin-bottom: 5%;
+
+
+} 
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#button {
+
+    color: #ffffff;
+    background:red; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 25px; 
+    width: 30%;
+    height: 50px;
+    font-size: 18pt;
+    opacity: 85%;
+    animation: blink normal 2s infinite ease-in-out;
+    -webkit-animation: blink normal 2.5s infinite ease-in-out;
+}
+
+.input {
+
+     padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-color:#333;
+
+}
+
+
+    @-webkit-keyframes blink {
+
+    0% {
+        opacity:1;
+    }
+
+    50% {
+        opacity:0.5;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <center>
+
+        <img src="bloody.png" style="width: 150px;height: 20%; margin-bottom: -15%; margin-top: 10%">
+<form>
+    <label for="pswd">
+
+    If winning is what you want to do,
+   <br><br> Then figure out my password you must
+<br><br>    I come from land of sunshine and swamps
+<br><br>    My special password on a plate can be found
+
+
+
+    </label>
+    <input class="input" type="password" id="pswd">
+    <br>
+    <br>
+    <input id="button" type="button" value="GOOD LUCK" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "LSN442";
+        var altPassword = "LSN 442";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="FinalClue.html";
+        }
+
+        else if (altPassword == password) {
+             window.location="FinalClue.html";
+        }
+
+        else{
+            alert("INCORRECT");
+        }
+    }
+</script>
+
+</center>
+</body>
+</html>
